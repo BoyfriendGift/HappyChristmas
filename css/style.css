@@ -1,0 +1,106 @@
+body {
+    background-color: azure;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+
+    justify-content: space-between;
+ 
+  }
+
+.header-menu ul {
+    display: none;
+    list-style: none;
+    margin: 0px 0px 0px -14px;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: left;
+  }
+
+.hero-logo {
+    transform: rotate(-90deg);
+    margin: 100px;
+    align-content: center;
+}
+
+.hero-container img {
+    padding: 0px;
+    margin-bottom: 50px;
+    align-content: flex-end;
+}
+
+.link li a {
+    text-decoration: none;
+}
+
+.container {
+    justify-content: space-between;
+    float: inline-start;
+}
+
+.hero-container {
+    padding-bottom: 100px;
+    justify-content: baseline
+    display: flex;
+}
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel-item {
+    background-color: black;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;    
+}
+
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    transform: rotate(-90deg);
+}
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%,  rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
