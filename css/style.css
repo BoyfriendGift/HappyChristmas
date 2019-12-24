@@ -1,23 +1,31 @@
 body {
-    background-color: azure;
+    background: linear-gradient(rgb(160, 217, 255), gray)
 }
 
 .header {
     align-items: center;
     display: flex;
+    background-color: azure;
+    justify-content: space-around;
+    padding: 0 30px;
+    height: 200px;
 
-    justify-content: space-between;
- 
   }
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+}
 
-.header-menu ul {
-    display: none;
+.header-menu {
+   
     list-style: none;
     margin: 0px 0px 0px -14px;
     padding: 0px;
-    position: absolute;
+    position: relative;
     width: 100px;
     text-align: left;
+    height: inherit;
+    text-decoration: none;
+    text-align: justify;
   }
 
 .hero-logo {
@@ -26,10 +34,23 @@ body {
     align-content: center;
 }
 
-.hero-container img {
+.hero__container img {
     padding: 0px;
     margin-bottom: 50px;
     align-content: flex-end;
+    padding-bottom: 100px;
+    justify-content: baseline
+
+}
+
+
+.header a {
+    color: black;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 .link li a {
@@ -39,13 +60,13 @@ body {
 .container {
     justify-content: space-between;
     float: inline-start;
-}
-
-.hero-container {
-    padding-bottom: 100px;
-    justify-content: baseline
     display: flex;
 }
+
+.header__menu-nav {
+    display: flex;
+}
+
 
 .carousel {
     width: 100%;
