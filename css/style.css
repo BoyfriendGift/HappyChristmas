@@ -11,21 +11,30 @@ body {
     height: 200px;
 
   }
-h1, h2 {
+h1, h2, a {
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    
 }
 
 .header-menu {
    
     list-style: none;
+    display: flex;
     margin: 0px 0px 0px -14px;
     padding: 0px;
     position: relative;
     width: 100px;
     text-align: left;
     height: inherit;
-    text-decoration: none;
-    text-align: justify;
+    text-decoration: none;   
+    text-align: right;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+    align-items: center;
+    
   }
 
 .hero-logo {
@@ -61,10 +70,39 @@ h1, h2 {
     justify-content: space-between;
     float: inline-start;
     display: flex;
+    align-items: center;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+
+}
+.header ol li {
+    height: inherit;
+   
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   }
+   
+.header a {
+    color: black;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 .header__menu-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
